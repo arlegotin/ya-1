@@ -63,12 +63,18 @@
 				'Boening 737-8, B747',
 				'Airbus 320, A320'
 			),
-			'statuses' => array(
+			'statuses_departing' => array(
 				'Регистрация',
 				'Ожидание посадки',
 				'Посадка закончена',
 				'Вылетел',
+				'Задерживается до ' . $parameters,
+				'Отменен'
+			),
+			'statuses_arriving' => array(
+				'По расписанию',
 				'Летит',
+				'Приземлилися',
 				'Задерживается до ' . $parameters,
 				'Отменен'
 			),
@@ -140,9 +146,10 @@
 	for ( $i = 0; $i < 100; $i++ ) {
 		$airline = explode( ', ', getRandomData( 'airlines' ) );
 		$aircraft = explode( ', ', getRandomData( 'aircrafts' ) );
+		$flight_type = getRandomData( 'flight_types' );
 	
 		array_push( $content, array(
-			'flight_type' => getRandomData( 'flight_types' ),
+			'flight_type' => $flight_type,
 			'flight_number' => getRandomFlightNumber(),
 			'airline_name' => $airline[ 0 ],
 			'airline_classname' => $airline[ 1 ],
@@ -150,7 +157,7 @@
 			'aircraft_type_short' => $aircraft[ 1 ],
 			'destination' => getRandomData( 'cities' ),
 			'time' => getRandomTime(),
-			'status' => getRandomData( 'statuses', getRandomTime() ),
+			'status' => getRandomData( 'statuses_' . $flight_type, getRandomTime() ),
 			'note' => getRandomData( 'notes' )
 		) );
 	}
@@ -223,11 +230,15 @@
 							
 							<p class="row__item row__item--aircraft_type_short"><?php echo $item[ 'aircraft_type_short' ]; ?></p>
 							
-							<p class="row__item row__item--destination"><?php echo $item[ 'destination' ]; ?></p>
+							<p class="row__item row__item--destination">
+								<span class="row__item__overflowed"><?php echo $item[ 'destination' ]; ?></span>
+							</p>
 							
 							<p class="row__item row__item--time"><?php echo $item[ 'time' ]; ?></p>
 							
-							<p class="row__item row__item--status"><?php echo $item[ 'status' ]; ?></p>
+							<p class="row__item row__item--status">
+								<span class="row__item__overflowed"><?php echo $item[ 'status' ]; ?></span>
+							</p>
 							
 							<p class="row__item row__item--note">
 								<span class="row__item__overflowed"><?php echo $item[ 'note' ]; ?></span>
