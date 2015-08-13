@@ -9,734 +9,734 @@
 @ui_color_c: #FFD93F;
 
 .item-width(@n: 1) {
-	width: @module_width * @n;
+    width: @module_width * @n;
 }
 
 .box-sizing {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .clear {
-	clear: both;
+    clear: both;
 }
 
 .clear-fix {
-	&:after {
-		content: '';
-		display: block;
-		clear: both;
-		width: 100%;
-	}
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+        width: 100%;
+    }
 }
 
 .contain {
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 /* layout */
 
 body, html {
-	height: 100%;
+    height: 100%;
 }
 
 .page {
-	padding-bottom: 100px;
+    padding-bottom: 100px;
 }
 
 .board {
-	font-family: Helvetica, Arial, sans-serif;
-	font-size: 12px;
-	font-weight: normal;
-	height: auto;
-	line-height: 19px;
-	background-color: @bg_color;
-	
-	.with_airline_info {
-		&--airline {
-			&-airfrance {
-				.airline_logo {
-					background-image: url(../images/logos/airfrance.png);
-				}
-			}
-			
-			&-aeroflot {
-				.airline_logo {
-					background-image: url(../images/logos/aeroflot.png);
-				}
-			}
-			
-			&-lufthansa {
-				.airline_logo {
-					background-image: url(../images/logos/lufthansa.png);
-				}
-			}
-			
-			&-air_new_zealand {
-				.airline_logo {
-					background-image: url(../images/logos/air_new_zealand.png);
-				}
-			}
-			
-			&-china_eastern_airlines {
-				.airline_logo {
-					background-image: url(../images/logos/china_eastern_airlines.png);
-				}
-			}
-			
-			&-british_airways {
-				.airline_logo {
-					background-image: url(../images/logos/british_airways.png);
-				}
-			}
-			
-			&-united_airlines {
-				.airline_logo {
-					background-image: url(../images/logos/united_airlines.png);
-				}
-			}
-			
-			&-vietnam_airlines {
-				.airline_logo {
-					background-image: url(../images/logos/vietnam_airlines.png);
-				}
-			}
-			
-			&-iberia_airlines {
-				.airline_logo {
-					background-image: url(../images/logos/iberia_airlines.png);
-				}
-			}
-			
-			&-utair {
-				.airline_logo {
-					background-image: url(../images/logos/utair.png);
-				}
-			}
-			
-			&-iran_air {
-				.airline_logo {
-					background-image: url(../images/logos/iran_air.png);
-				}
-			}
-			
-			&-alitalia {
-				.airline_logo {
-					background-image: url(../images/logos/alitalia.png);
-				}
-			}
-			
-			&-cambodia_angkor_air {
-				.airline_logo {
-					background-image: url(../images/logos/cambodia_angkor_air.png);
-				}
-			}
-			
-			&-japan_airlines {
-				.airline_logo {
-					background-image: url(../images/logos/japan_airlines.png);
-				}
-			}
-			
-			&-transaero {
-				.airline_logo {
-					background-image: url(../images/logos/transaero.png);
-				}
-			}
-			
-			&-czech_airlines {
-				.airline_logo {
-					background-image: url(../images/logos/czech_airlines.png);
-				}
-			}
-		}
-	}
-	
-	&__container {
-		position: relative;
-		width: @container_width;
-		margin: 0 auto;
-	}
-	
-	/* header */
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    height: auto;
+    line-height: 19px;
+    background-color: @bg_color;
+    
+    .with_airline_info {
+        &--airline {
+            &-airfrance {
+                .airline_logo {
+                    background-image: url(../images/logos/airfrance.png);
+                }
+            }
+            
+            &-aeroflot {
+                .airline_logo {
+                    background-image: url(../images/logos/aeroflot.png);
+                }
+            }
+            
+            &-lufthansa {
+                .airline_logo {
+                    background-image: url(../images/logos/lufthansa.png);
+                }
+            }
+            
+            &-air_new_zealand {
+                .airline_logo {
+                    background-image: url(../images/logos/air_new_zealand.png);
+                }
+            }
+            
+            &-china_eastern_airlines {
+                .airline_logo {
+                    background-image: url(../images/logos/china_eastern_airlines.png);
+                }
+            }
+            
+            &-british_airways {
+                .airline_logo {
+                    background-image: url(../images/logos/british_airways.png);
+                }
+            }
+            
+            &-united_airlines {
+                .airline_logo {
+                    background-image: url(../images/logos/united_airlines.png);
+                }
+            }
+            
+            &-vietnam_airlines {
+                .airline_logo {
+                    background-image: url(../images/logos/vietnam_airlines.png);
+                }
+            }
+            
+            &-iberia_airlines {
+                .airline_logo {
+                    background-image: url(../images/logos/iberia_airlines.png);
+                }
+            }
+            
+            &-utair {
+                .airline_logo {
+                    background-image: url(../images/logos/utair.png);
+                }
+            }
+            
+            &-iran_air {
+                .airline_logo {
+                    background-image: url(../images/logos/iran_air.png);
+                }
+            }
+            
+            &-alitalia {
+                .airline_logo {
+                    background-image: url(../images/logos/alitalia.png);
+                }
+            }
+            
+            &-cambodia_angkor_air {
+                .airline_logo {
+                    background-image: url(../images/logos/cambodia_angkor_air.png);
+                }
+            }
+            
+            &-japan_airlines {
+                .airline_logo {
+                    background-image: url(../images/logos/japan_airlines.png);
+                }
+            }
+            
+            &-transaero {
+                .airline_logo {
+                    background-image: url(../images/logos/transaero.png);
+                }
+            }
+            
+            &-czech_airlines {
+                .airline_logo {
+                    background-image: url(../images/logos/czech_airlines.png);
+                }
+            }
+        }
+    }
+    
+    &__container {
+        position: relative;
+        width: @container_width;
+        margin: 0 auto;
+    }
+    
+    /* header */
 
-	&__header {
-		position: fixed;
-		z-index: 5;
-		width: 100%;
-		left: 0;
-		top: 0;
-		background-color: @bg_color;
-		
-		.board__container {
-			border-bottom: 1px solid @ui_color_a;
-		}
-	}
-	
-	&__content {
-		position: relative;
-		z-index: 3;
-		border-bottom: 1px solid @ui_color_a;
-		overflow: hidden;
-	}
-	
-	&__filter {
-		position: fixed;
-		z-index: 6;
-		top: @module_height;
-		
-		&:after {
-			position: absolute;
-			top: 0;
-			left: 100%;
-			margin-left: 5px;
-		}
-	
-		&--flight_type {
-			&-departing {
-				left: 10px;
-			
-				&:not(:checked) {
-					&~.board__content .row--flight_type-departing {
-						display: none;
-					}
-				}
-				
-				&:after {
-					content: 'Вылет';
-				}
-			}
-			
-			&-arriving {
-				left: 75px;
-			
-				&:not(:checked) {
-					&~.board__content .row--flight_type-arriving {
-						display: none;
-					}
-				}
-				
-				&:after {
-					content: 'Прилет';
-				}
-			}
-		}
-	}
-	
-	&__popup_container {
-		.popup {
-			position: fixed;
-			z-index: 8;
-			left: 0;
-			top: 0;
-			width: 100%;
-			height: 100%;
-			display: none;
-			font-size: 14px;
-			.with_airline_info;
-			
-			&--flight_type-departing {
-				.popup__content:after {
-					background-image: url(../images/ui/flight_departing_bg.png);
-				}
-			
-				.prefix--flight_type-departing {
-					display: inline !important;
-				}
-			}
-			
-			&--flight_type-arriving {
-				.popup__content:after {
-					background-image: url(../images/ui/flight_arriving_bg.png);
-				}
-			
-				.prefix--flight_type-arriving {
-					display: inline !important;
-				}
-			}
-			
-			&:target {
-				display: table;
-			}
-			
-			&__mount {
-				display: block;
-				position: absolute;
-				left: 0;
-				top: 0;
-				width: 100%;
-				height: 100%;
-				background-color: rgba(0, 0, 0, 0.62);
-				cursor: default;
-			}
-		
-			&__content {
-				position: relative;
-				display: table-cell;
-				vertical-align: middle;
-				/*position: absolute;
-				left: 0;
-				top: 0;
-				right: 0;
-				bottom: 0;
-				margin: auto;*/
-				width: 600px;
-				height: 400px;
-				background-color: @bg_color;
-				padding: @module_height * 2;
-				overflow: scroll;
-				.box-sizing;
-				
-				&__close {
-					position: absolute;
-					top: @module_height * 2;
-					right: @module_height * 2;
-					font-size: 12px;
-					line-height: 15px;
-					border-bottom: 1px dashed #0060A0;
-					color: #0060A0;
-					
-					&:hover {
-						color: #D04000;
-						border-color: #D04000;
-					}
-				}
-				
-				&:after {
-					content: '';
-					position: absolute;
-					right: @module_height * 2;
-					bottom: @module_height * 2;
-					width: 100px;
-					height: 100px;
-					pointer-events: none;
-					opacity: 0.2;
-					.contain;
-				}
-				
-				.airline_logo {
-					width: 200px;
-					height: @module_height * 3;
-					margin-bottom: @module_height * 2;
-					.contain;
-				}
-				
-				.section {
-					margin-bottom: @module_height / 2;
-					.clear-fix;
-				
-					&__label {
-						display: block;
-						float: left;
-						width: 150px;
-						color: #9E9E9E;
-					}
-					
-					&__info {
-						display: block;
-						float: left;
-						width: 310px;
-						
-						.prefix {
-							&--flight_type {
-								display: none;
-							}
-						}
-						
-						&:empty {
-							&:after {
-								content: 'Нет';
-								opacity: 0.38;
-							}
-						}
-					}
-					
-					&--flight_number, &--destination, &--time {
-						/*.section__info {
-							font-size: 18px;
-							font-weight: bold;
-						}*/
-					}
-				}
-			}
-		}
-	}
-	
-	.header, .content {
-		.row {
-			display: block;
-			.with_airline_info;
-		
-			&--flight_type {
-				&-departing {
-					.row__item--flight_type-departing {
-						display: block;
-					}
-				}
-				
-				&-arriving {
-					.row__item--flight_type-arriving {
-						display: block;
-					}
-				}
-			}
-			
-			&__item {
-				position: relative;
-				display: block;
-				float: left;
-				height: 100%;
-				padding: 0 10px;
-				white-space: normal;
-				.box-sizing;
-				
-				&__image {
-					display: none;
-					float: left;
-					height: 100%;
-					margin-right: 10px;
-					.contain;
-				}
-				
-				&__text {
-					display: block;
-					float: left;
-				}
-				
-				&--flight_type {
-					.item-width(3);
-					display: none;
-					
-					.row__item__image {
-						display: block;
-						width: 12px;
-					}
-					
-					&-arriving {
-						.row__item__image {
-							background-image: url(../images/ui/flight_arriving.png);
-						}
-					}
-					
-					&-departing {
-						.row__item__image {
-							background-image: url(../images/ui/flight_departing.png);
-						}
-					}
-				}
-				
-				&--flight_number {
-					.item-width(3);
-					
-					.row__item__image {
-						width: 70px;
-					}
-				}
-				
-				&--airline_name {
-					.item-width(8);
-					
-					.row__item__image {
-						width: 70px;
-						display: block;
-					}
-				}
-				
-				&--aircraft_type {
-					.item-width(5);
-					
-					&_short {
-						.item-width(3);
-						display: none;
-					}
-				}
-				
-				&--destination {
-					.item-width(6);
-				}
-				
-				&--time {
-					.item-width(3);
-				}
-				
-				&--status {
-					.item-width(6);
-				}
-				
-				&--note {
-					.item-width(6);
-				}
-			}
-			
-			&__data {
-				display: none;
-			}
-		}
-	}
-	
-	.header {
-		font-weight: bold;
-	
-		.row {
-			padding-top: @module_height * 2;
-			height: @module_height * 3;
-			line-height: @module_height * 3;
-			
-			.row__item--flight_type {
-				display: block;
-			}
-		}
-	}
-	
-	/* content */
-	
-	.content {
-		padding-top: @module_height * 5;
-	
-		.row {
-			height: @module_height * 2;
-			line-height: @module_height * 2;
-			position: relative;
-			z-index: 2;
-			
-			&:nth-child(odd) {
-				background-color: @ui_color_b;
-			}
-			
-			&:hover {
-				background-color: @ui_color_c;
-				cursor: pointer;
-				z-index: 1;
-			}
-			
-			&__item {
-				&__overflowed {
-					display: block;
-					width: 100%;
-					white-space: nowrap;
-					overflow: hidden;
-					text-overflow: ellipsis;
-					
-					&:empty {
-						&:after {
-							content: 'Нет';
-							opacity: 0.38;
-						}
-					}
-				}
-			
-				&:hover {
-					@h: 1500px;
-					
-					&:before {
-						content: '';
-						position: absolute;
-						width: 100%;
-						height: @h;
-						top: -@h;
-						background-color: @ui_color_c;
-						left: 0;
-					}
-				
-					&:after {
-						content: '';
-						position: absolute;
-						width: 100%;
-						height: @h;
-						top: 0;
-						background-color: @ui_color_c;
-						left: 0;
-						top: 100%;
-					}
-				}
-			}
-		}
-	}
+    &__header {
+        position: fixed;
+        z-index: 5;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background-color: @bg_color;
+        
+        .board__container {
+            border-bottom: 1px solid @ui_color_a;
+        }
+    }
+    
+    &__content {
+        position: relative;
+        z-index: 3;
+        border-bottom: 1px solid @ui_color_a;
+        overflow: hidden;
+    }
+    
+    &__filter {
+        position: fixed;
+        z-index: 6;
+        top: @module_height;
+        
+        &:after {
+            position: absolute;
+            top: 0;
+            left: 100%;
+            margin-left: 5px;
+        }
+    
+        &--flight_type {
+            &-departing {
+                left: 10px;
+            
+                &:not(:checked) {
+                    &~.board__content .row--flight_type-departing {
+                        display: none;
+                    }
+                }
+                
+                &:after {
+                    content: 'Вылет';
+                }
+            }
+            
+            &-arriving {
+                left: 75px;
+            
+                &:not(:checked) {
+                    &~.board__content .row--flight_type-arriving {
+                        display: none;
+                    }
+                }
+                
+                &:after {
+                    content: 'Прилет';
+                }
+            }
+        }
+    }
+    
+    &__popup_container {
+        .popup {
+            position: fixed;
+            z-index: 8;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            display: none;
+            font-size: 14px;
+            .with_airline_info;
+            
+            &--flight_type-departing {
+                .popup__content:after {
+                    background-image: url(../images/ui/flight_departing_bg.png);
+                }
+            
+                .prefix--flight_type-departing {
+                    display: inline !important;
+                }
+            }
+            
+            &--flight_type-arriving {
+                .popup__content:after {
+                    background-image: url(../images/ui/flight_arriving_bg.png);
+                }
+            
+                .prefix--flight_type-arriving {
+                    display: inline !important;
+                }
+            }
+            
+            &:target {
+                display: table;
+            }
+            
+            &__mount {
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.62);
+                cursor: default;
+            }
+        
+            &__content {
+                position: relative;
+                display: table-cell;
+                vertical-align: middle;
+                /*position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;*/
+                width: 600px;
+                height: 400px;
+                background-color: @bg_color;
+                padding: @module_height * 2;
+                overflow: scroll;
+                .box-sizing;
+                
+                &__close {
+                    position: absolute;
+                    top: @module_height * 2;
+                    right: @module_height * 2;
+                    font-size: 12px;
+                    line-height: 15px;
+                    border-bottom: 1px dashed #0060A0;
+                    color: #0060A0;
+                    
+                    &:hover {
+                        color: #D04000;
+                        border-color: #D04000;
+                    }
+                }
+                
+                &:after {
+                    content: '';
+                    position: absolute;
+                    right: @module_height * 2;
+                    bottom: @module_height * 2;
+                    width: 100px;
+                    height: 100px;
+                    pointer-events: none;
+                    opacity: 0.2;
+                    .contain;
+                }
+                
+                .airline_logo {
+                    width: 200px;
+                    height: @module_height * 3;
+                    margin-bottom: @module_height * 2;
+                    .contain;
+                }
+                
+                .section {
+                    margin-bottom: @module_height / 2;
+                    .clear-fix;
+                
+                    &__label {
+                        display: block;
+                        float: left;
+                        width: 150px;
+                        color: #9E9E9E;
+                    }
+                    
+                    &__info {
+                        display: block;
+                        float: left;
+                        width: 310px;
+                        
+                        .prefix {
+                            &--flight_type {
+                                display: none;
+                            }
+                        }
+                        
+                        &:empty {
+                            &:after {
+                                content: 'Нет';
+                                opacity: 0.38;
+                            }
+                        }
+                    }
+                    
+                    &--flight_number, &--destination, &--time {
+                        /*.section__info {
+                            font-size: 18px;
+                            font-weight: bold;
+                        }*/
+                    }
+                }
+            }
+        }
+    }
+    
+    .header, .content {
+        .row {
+            display: block;
+            .with_airline_info;
+        
+            &--flight_type {
+                &-departing {
+                    .row__item--flight_type-departing {
+                        display: block;
+                    }
+                }
+                
+                &-arriving {
+                    .row__item--flight_type-arriving {
+                        display: block;
+                    }
+                }
+            }
+            
+            &__item {
+                position: relative;
+                display: block;
+                float: left;
+                height: 100%;
+                padding: 0 10px;
+                white-space: normal;
+                .box-sizing;
+                
+                &__image {
+                    display: none;
+                    float: left;
+                    height: 100%;
+                    margin-right: 10px;
+                    .contain;
+                }
+                
+                &__text {
+                    display: block;
+                    float: left;
+                }
+                
+                &--flight_type {
+                    .item-width(3);
+                    display: none;
+                    
+                    .row__item__image {
+                        display: block;
+                        width: 12px;
+                    }
+                    
+                    &-arriving {
+                        .row__item__image {
+                            background-image: url(../images/ui/flight_arriving.png);
+                        }
+                    }
+                    
+                    &-departing {
+                        .row__item__image {
+                            background-image: url(../images/ui/flight_departing.png);
+                        }
+                    }
+                }
+                
+                &--flight_number {
+                    .item-width(3);
+                    
+                    .row__item__image {
+                        width: 70px;
+                    }
+                }
+                
+                &--airline_name {
+                    .item-width(8);
+                    
+                    .row__item__image {
+                        width: 70px;
+                        display: block;
+                    }
+                }
+                
+                &--aircraft_type {
+                    .item-width(5);
+                    
+                    &_short {
+                        .item-width(3);
+                        display: none;
+                    }
+                }
+                
+                &--destination {
+                    .item-width(6);
+                }
+                
+                &--time {
+                    .item-width(3);
+                }
+                
+                &--status {
+                    .item-width(6);
+                }
+                
+                &--note {
+                    .item-width(6);
+                }
+            }
+            
+            &__data {
+                display: none;
+            }
+        }
+    }
+    
+    .header {
+        font-weight: bold;
+    
+        .row {
+            padding-top: @module_height * 2;
+            height: @module_height * 3;
+            line-height: @module_height * 3;
+            
+            .row__item--flight_type {
+                display: block;
+            }
+        }
+    }
+    
+    /* content */
+    
+    .content {
+        padding-top: @module_height * 5;
+    
+        .row {
+            height: @module_height * 2;
+            line-height: @module_height * 2;
+            position: relative;
+            z-index: 2;
+            
+            &:nth-child(odd) {
+                background-color: @ui_color_b;
+            }
+            
+            &:hover {
+                background-color: @ui_color_c;
+                cursor: pointer;
+                z-index: 1;
+            }
+            
+            &__item {
+                &__overflowed {
+                    display: block;
+                    width: 100%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    
+                    &:empty {
+                        &:after {
+                            content: 'Нет';
+                            opacity: 0.38;
+                        }
+                    }
+                }
+            
+                &:hover {
+                    @h: 1500px;
+                    
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: @h;
+                        top: -@h;
+                        background-color: @ui_color_c;
+                        left: 0;
+                    }
+                
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: @h;
+                        top: 0;
+                        background-color: @ui_color_c;
+                        left: 0;
+                        top: 100%;
+                    }
+                }
+            }
+        }
+    }
 }
 
 /* media queries */
 
 @media only screen and (max-width: 1200px) {
-	.board {
-		.content, .header {
-			.row {
-				&__item {
-					&--flight_type {
-						.item-width(4);
-					}
-					
-					&--airline_name {
-						.item-width(6);
-					
-						.row__item__image {
-							display: none;
-						}
-					}
-				
-					&--aircraft_type {
-						display: none;
-						
-						&_short {
-							display: block;
-						}
-					}
-					
-					&--destination {
-						.item-width(7);
-					}
-					
-					&--status {
-						.item-width(8);
-					}
-					
-					&--note {
-						.item-width(6);
-					}
-				}
-			}
-		}
-	}
+    .board {
+        .content, .header {
+            .row {
+                &__item {
+                    &--flight_type {
+                        .item-width(4);
+                    }
+                    
+                    &--airline_name {
+                        .item-width(6);
+                    
+                        .row__item__image {
+                            display: none;
+                        }
+                    }
+                
+                    &--aircraft_type {
+                        display: none;
+                        
+                        &_short {
+                            display: block;
+                        }
+                    }
+                    
+                    &--destination {
+                        .item-width(7);
+                    }
+                    
+                    &--status {
+                        .item-width(8);
+                    }
+                    
+                    &--note {
+                        .item-width(6);
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 1000px) {
-	.board {
-		.content, .header {
-			.row {
-				&__item {
-					&--flight_type {
-						.item-width(5);
-					}
-				
-					&--flight_number {
-						.item-width(8);
-					
-						.row__item__image {
-							display: block;
-						}
-					}
-				
-					&--airline_name {
-						display: none;
-					}
-				
-					&--aircraft_type {
-						&_short {
-							display: none;
-						}
-					}
-					
-					&--destination {
-						.item-width(8);
-					}
-					
-					&--status {
-						.item-width(9);
-					}
-					
-					&--note {
-						.item-width(7);
-					}
-				}
-			}
-		}
-	}
+    .board {
+        .content, .header {
+            .row {
+                &__item {
+                    &--flight_type {
+                        .item-width(5);
+                    }
+                
+                    &--flight_number {
+                        .item-width(8);
+                    
+                        .row__item__image {
+                            display: block;
+                        }
+                    }
+                
+                    &--airline_name {
+                        display: none;
+                    }
+                
+                    &--aircraft_type {
+                        &_short {
+                            display: none;
+                        }
+                    }
+                    
+                    &--destination {
+                        .item-width(8);
+                    }
+                    
+                    &--status {
+                        .item-width(9);
+                    }
+                    
+                    &--note {
+                        .item-width(7);
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 800px) {
-	.board {
-		.content, .header {
-			.row {
-				&__item {
-					&--flight_type {
-						.item-width(3);
-					
-						.row__item__text {
-							display: none;
-						}
-					}
-				
-					&--flight_number {
-						.item-width(9);
-					}
-				
-					&--destination, &--status {
-						.item-width(12);
-					}
-					
-					&--time {
-						.item-width(4);
-					}
-					
-					&--note {
-						display: none;
-					}
-				}
-			}
-		}
-	}
+    .board {
+        .content, .header {
+            .row {
+                &__item {
+                    &--flight_type {
+                        .item-width(3);
+                    
+                        .row__item__text {
+                            display: none;
+                        }
+                    }
+                
+                    &--flight_number {
+                        .item-width(9);
+                    }
+                
+                    &--destination, &--status {
+                        .item-width(12);
+                    }
+                    
+                    &--time {
+                        .item-width(4);
+                    }
+                    
+                    &--note {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 650px) {
-	.board {
-		.content, .header {
-			.row {
-				&__item {
-					&--flight_type {
-						.item-width(3);
-					}
-				
-					&--flight_number {
-						.item-width(6);
-						
-						.row__item__image {
-							display: none;
-						}
-					}
-					
-					&--time {
-						.item-width(5);
-					}
-				
-					&--destination, &--status {
-						.item-width(13);
-					}
-				}
-			}
-		}
-	}
+    .board {
+        .content, .header {
+            .row {
+                &__item {
+                    &--flight_type {
+                        .item-width(3);
+                    }
+                
+                    &--flight_number {
+                        .item-width(6);
+                        
+                        .row__item__image {
+                            display: none;
+                        }
+                    }
+                    
+                    &--time {
+                        .item-width(5);
+                    }
+                
+                    &--destination, &--status {
+                        .item-width(13);
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 550px) {
-	.board {
-		font-size: 10px;
-	}
+    .board {
+        font-size: 10px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
-	.board {
-		.popup__content {
-			width: 100%;
-			
-			&:after {
-				display: none;
-			}
-		}
-	}
+    .board {
+        .popup__content {
+            width: 100%;
+            
+            &:after {
+                display: none;
+            }
+        }
+    }
 }
 
 @media only screen and (max-height: 600px) {
-	.board {
-		.popup__content {
-			&:after {
-				display: none;
-			}
-		
-			.airline_logo {
-				display: none;
-			}
-		}
-	}
+    .board {
+        .popup__content {
+            &:after {
+                display: none;
+            }
+        
+            .airline_logo {
+                display: none;
+            }
+        }
+    }
 }
