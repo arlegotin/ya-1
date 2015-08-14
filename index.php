@@ -169,9 +169,9 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta name="robots" content="noindex"/>
         <title>Ya: task 1</title>
-        <link type="text/css" rel="stylesheet/less" href="/ya/1/styles/reset.css"/>
-        <link type="text/css" rel="stylesheet/less" href="/ya/1/styles/main.css"/>
-        <script type="text/javascript" src="/ya/1/scripts/less.min.js"></script>
+        <link type="text/css" rel="stylesheet/less" href="styles/reset.css"/>
+        <link type="text/css" rel="stylesheet/less" href="styles/main.css"/>
+        <script type="text/javascript" src="scripts/less.min.js"></script>
     </head>
     <body>
         <div class="page">
